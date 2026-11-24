@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Generals of Chaos</title>
+  <desc id="d">Order the chaos. Build. Observe. Iterate. Carolina Beach, NC.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#f4f5f3" stroke-opacity=".05" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop offset="0" stop-color="#07090a" stop-opacity="1"/>
+      <stop offset=".55" stop-color="#07090a" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#07090a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" x2="1">
+      <stop offset="0" stop-color="#e65f00" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#ff7620" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#e65f00" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="tick"><rect x="0" y="270" width="1200" height="50"/></clipPath>
+    <style>
+      .brand{font:800 15px Inter,'Segoe UI',Arial,sans-serif;letter-spacing:.32em;fill:#f4f5f3}
+      .hero{font:400 92px Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;fill:#f4f5f3;letter-spacing:.01em}
+      .amber{fill:#e65f00}
+      .sub{font:500 19px Inter,'Segoe UI',Arial,sans-serif;fill:#afb4b6}
+      .mono{font:600 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.14em;fill:#c5c9ca}
+      .ok{fill:#3ee6a2}
+      .pulse{animation:pulse 2.4s ease-in-out infinite}
+      .d2{animation-delay:.4s}.d3{animation-delay:.8s}.d4{animation-delay:1.2s}.d5{animation-delay:1.6s}.d6{animation-delay:2s}
+      .sweep{animation:sweep 6s linear infinite}
+      .ticker{animation:ticker 28s linear infinite}
+      .cursor{animation:blink 1s steps(1) infinite}
+      @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+      @keyframes sweep{0%{transform:translateX(-400px)}100%{transform:translateX(1400px)}}
+      @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-1200px)}}
+      @keyframes blink{50%{opacity:0}}
+      @media (prefers-reduced-motion:reduce){.pulse,.sweep,.ticker,.cursor{animation:none}}
+    </style>
+  </defs>
+  <rect width="1200" height="320" fill="#07090a"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+  <!-- radar rings, right side -->
+  <g transform="translate(985 140)" fill="none" stroke="#3ee6a2" stroke-opacity=".22">
+    <circle r="52"/><circle r="98"/><circle r="144"/>
+    <path d="M-150 0H150M0-150V150" stroke-opacity=".12"/>
+    <g>
+      <path d="M0 0L0 -144A144 144 0 0 1 102 -102Z" fill="#3ee6a2" fill-opacity=".10" stroke="none"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+    </g>
+    <circle cx="-60" cy="-40" r="4" fill="#e65f00" stroke="none" class="pulse"/>
+    <circle cx="70" cy="30" r="4" fill="#3ee6a2" stroke="none" class="pulse d3"/>
+    <circle cx="20" cy="-100" r="3" fill="#3ee6a2" stroke="none" class="pulse d5"/>
+  </g>
+  <rect width="1200" height="320" fill="url(#fade)"/>
+  <!-- GoC mark (from cbgoc-cloud.top favicon) -->
+  <g transform="translate(56 44) scale(.75)">
+    <rect width="64" height="64" rx="6" fill="#0b0e10" stroke="#f4f5f3" stroke-opacity=".18"/>
+    <path d="M14 14h36v8H22v20h20v-6H30v-8h20v22H14z" fill="#f4f5f3"/>
+    <path d="M50 14h-8v8h8zM22 42h8v8h-8z" fill="#e65f00"/>
+  </g>
+  <text x="118" y="70" class="brand">GENERALS OF CHAOS</text>
+  <text x="118" y="90" class="mono" style="font-size:11px;fill:#8b9295">LIPFORD-DUTCH · CAROLINA BEACH, NC</text>
+  <text x="54" y="196" class="hero" transform="translate(54 0) scale(.86 1) translate(-54 0)">ORDER THE CHAOS<tspan class="amber">.</tspan></text>
+  <text x="56" y="236" class="sub">Build. Observe. Iterate.  Network automation · observability · civic tech · local commerce<tspan class="amber cursor"> ▌</tspan></text>
+  <rect x="0" y="262" width="1200" height="1" fill="#f4f5f3" fill-opacity=".14"/>
+  <rect x="0" y="261" width="400" height="3" fill="url(#scan)" class="sweep"/>
+  <!-- status ticker: theaters listed on cbgoc-cloud.top -->
+  <g clip-path="url(#tick)">
+    <g class="ticker">
+      <g id="row">
+        <circle cx="64" cy="292" r="4" class="ok pulse"/><text x="76" y="297" class="mono">NAUTOBOT  OPERATIONAL</text>
+        <circle cx="284" cy="292" r="4" class="ok pulse d2"/><text x="296" y="297" class="mono">GRAFANA  OPERATIONAL</text>
+        <circle cx="494" cy="292" r="4" class="ok pulse d3"/><text x="506" y="297" class="mono">CB411  LIVE</text>
+        <circle cx="634" cy="292" r="4" class="ok pulse d4"/><text x="646" y="297" class="mono">NOLLIES  LIVE</text>
+        <circle cx="784" cy="292" r="4" class="ok pulse d5"/><text x="796" y="297" class="mono">HOPLITE  LIVE</text>
+        <circle cx="934" cy="292" r="4" class="ok pulse d6"/><text x="946" y="297" class="mono">F5 SENTINEL  LIVE</text>
+      </g>
+      <use href="#row" x="1200"/>
+    </g>
+  </g>
+</svg>

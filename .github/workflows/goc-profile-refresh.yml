@@ -1,0 +1,40 @@
+# Weekly refresh of the org profile pulse card and shipping feed.
+name: "GoC profile refresh"
+
+"on":
+  workflow_dispatch:
+  schedule:
+    - cron: "17 10 * * 1"   # Mondays 10:17 UTC (05:17 ET)
+  repository_dispatch:
+    types: ["goc-shipped"]  # optional: active repos ping on release
+
+permissions:
+  contents: "write"
+
+concurrency:
+  group: "goc-profile-refresh"
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v4"
+      - uses: "actions/setup-python@v6"
+        with:
+          python-version: "3.12"
+      - name: "Render stats card and shipping feed"
+        env:
+          GITHUB_TOKEN: "${{ github.token }}"
+          ORG_LOGIN: "Lipford-Dutch"
+          # upstream imports that are not GoC work (drop once archived)
+          GOC_EXCLUDE: "wifiphisher,usertour,generals-erp-crm,build-push-action,Swag-Labs"
+        run: "python scripts/render_profile.py"
+      - name: "Commit if changed"
+        run: |
+          if git diff --quiet -- profile/; then echo "No changes."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/
+          git commit -m "docs(profile): refresh GoC pulse and shipping feed"
+          git push
