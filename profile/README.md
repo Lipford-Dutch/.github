@@ -76,14 +76,14 @@
 ## 🛰️ What we're shipping
 
 <!-- goc:feed:start -->
-<!-- Rewritten weekly: latest releases, merged PRs and Pages deploys across public, non-fork repos. -->
 | When | Repo | Signal |
 | --- | --- | --- |
-| 2026-11-24 | [goc-guide-library](https://github.com/Lipford-Dutch/goc-guide-library) | New: searchable library of step-by-step GoC guides |
-| 2026-11-22 | [nautobot-wireless-cellular-sot-app](https://github.com/Lipford-Dutch/nautobot-wireless-cellular-sot-app) | Push to `main` |
-| 2026-11-22 | [nautobot-app-custom-metrics](https://github.com/Lipford-Dutch/nautobot-app-custom-metrics) | Push to `main` |
-| 2026-11-18 | [carolina-beach-local-411](https://github.com/Lipford-Dutch/carolina-beach-local-411) | Push to `main` |
-| 2026-11-09 | [pleasureislanddesign.com](https://github.com/Lipford-Dutch/pleasureislanddesign.com) | Site update, live at pleasureislanddesign.com |
+| 2026-11-24 | [.github](https://github.com/Lipford-Dutch/.github) | Public org profile for Generals of Chaos (Lipford-Dutch): animated header, active theaters |
+| 2026-11-24 | [goc-guide-library](https://github.com/Lipford-Dutch/goc-guide-library) | GoC step-by-step guide library. |
+| 2026-11-24 | [Hannah-Huffman-Wealth-Horizon](https://github.com/Lipford-Dutch/Hannah-Huffman-Wealth-Horizon) | Hannah's Wealth Horizon: an interactive 10-year family roadmap for financial independence, |
+| 2026-11-24 | [GOC-DEMO-ASSETS-1](https://github.com/Lipford-Dutch/GOC-DEMO-ASSETS-1) | Various Generals of Chaos Demo Assets |
+| 2026-11-24 | [f5-staging-precheck](https://github.com/Lipford-Dutch/f5-staging-precheck) | check_multi 2.0 + bigip-precheck: parallel SSH and iControl REST audit framework for F5 BI |
+| 2026-11-24 | [citizen-karen-platform](https://github.com/Lipford-Dutch/citizen-karen-platform) | Consent-first civic complaint intake and tracking demo with plugin-driven agency simulatio |
 <!-- goc:feed:end -->
 
 <p align="center">
