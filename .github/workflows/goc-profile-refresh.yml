@@ -28,7 +28,7 @@ jobs:
           GITHUB_TOKEN: "${{ github.token }}"
           ORG_LOGIN: "Lipford-Dutch"
           # upstream imports that are not GoC work (drop once archived)
-          GOC_EXCLUDE: "wifiphisher,usertour,generals-erp-crm,build-push-action,Swag-Labs"
+          GOC_EXCLUDE: ".github,wifiphisher,usertour,generals-erp-crm,build-push-action,Swag-Labs"
         run: "python scripts/render_profile.py"
       - name: "Commit if changed"
         run: |
