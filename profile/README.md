@@ -13,12 +13,73 @@
   <a href="https://cbgoc-cloud.top"><img alt="cbgoc-cloud.top" src="https://img.shields.io/badge/HQ-cbgoc--cloud.top-e65f00?style=for-the-badge&labelColor=07090a"></a>
   <a href="https://github.com/Lipford-Dutch/GOC-Base-Repo-Template"><img alt="Repo template" src="https://img.shields.io/badge/kickoff-GOC_Base_Template-3ee6a2?style=for-the-badge&labelColor=07090a"></a>
   <a href="https://lipford-dutch.github.io/goc-guide-library/"><img alt="Guide library" src="https://img.shields.io/badge/field_guides-library-f4f5f3?style=for-the-badge&labelColor=07090a"></a>
+  <a href="https://github.com/Lipford-Dutch/goc-brand-kit"><img alt="Brand kit" src="https://img.shields.io/badge/brand_kit-logos_&_tokens-e65f00?style=for-the-badge&labelColor=07090a"></a>
+  <a href="https://github.com/Lipford-Dutch/.github/discussions"><img alt="Discussions" src="https://img.shields.io/badge/discussions-announcements-3ee6a2?style=for-the-badge&labelColor=07090a"></a>
   <img alt="Base" src="https://img.shields.io/badge/base-Carolina_Beach,_NC-afb4b6?style=for-the-badge&labelColor=07090a">
 </p>
 
 <h3 align="center">A proving ground for infrastructure, observability, commerce, civic systems,<br>and the ideas we refuse to leave on paper.</h3>
 
 <img src="./assets/goc-divider.svg" width="100%" alt="">
+
+## 🚀 Now shipping
+
+T3 Code is the team's day-to-day coding console on the GoC lab machines. There is no public GoC repo for it yet.
+
+In-flight work we are promoting now:
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+**Auto guide publisher**<br>
+<sub>The GoC guide library: a searchable, Pages-hosted library of step-by-step field guides with a CI publisher.</sub><br>
+[library](https://lipford-dutch.github.io/goc-guide-library/) · [repo](https://github.com/Lipford-Dutch/goc-guide-library)
+
+</td>
+<td width="33%" valign="top">
+
+**Uncensored AI**<br>
+<sub>Self-hosted private AI stack (Ollama and a local prompts library) with a public living guide.</sub><br>
+[guide](https://willyd61.github.io/goc-private-ai/) · private beta
+
+</td>
+<td width="33%" valign="top">
+
+**Legacy integration system**<br>
+<sub>Resilient Interoperability Gateway (RIG): a discovery-stage, vendor-neutral framework for modernising legacy infrastructure.</sub><br>
+[public overview](https://rig-project-overview.willyd61.chatgpt.site) · private beta
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Batfish efforts**<br>
+<sub>Network configuration analysis, including a Nautobot-oriented Batfish lane.</sub><br>
+private beta · no public repo yet
+
+</td>
+<td valign="top">
+
+**Nautobot OTEL integration**<br>
+<sub>Planned OpenTelemetry path in the observability fabric (Nautobot → Prometheus + OTEL → Grafana), as described on the HQ site. A dedicated repo has not been published yet.</sub><br>
+[HQ / fabric](https://cbgoc-cloud.top)
+
+</td>
+<td valign="top">
+
+**Energy management**<br>
+<sub>In flight. A public repo has not been published yet.</sub><br>
+
+
+</td>
+</tr>
+</table>
+
+**Prompt library:** the public prompt collection at [willyd61/awesome-chatgpt-prompts](https://github.com/willyd61/awesome-chatgpt-prompts) (upstream [prompts.chat](https://prompts.chat)), deployed as the local prompts-chat app documented in the [private AI guide](https://willyd61.github.io/goc-private-ai/).
+
+**Wiki / field manuals:** the public knowledge base is the [GoC guide library](https://lipford-dutch.github.io/goc-guide-library/). Kickoff and governance notes also live in the [base template docs](https://lipford-dutch.github.io/GOC-Base-Repo-Template/) and its [wiki](https://github.com/Lipford-Dutch/GOC-Base-Repo-Template/wiki).
 
 ## ⚔️ Active theaters
 
@@ -101,8 +162,11 @@
 | **Observability fabric** | Nautobot → Prometheus + OTEL → Grafana, with OpenNMS + Kafka planned upstream. |
 | **Civic & local** | Citizen Karen civic intake demo and the Carolina Beach 411 local guide. |
 | **Commerce & brand** | [Pleasure Island Design](https://www.pleasureislanddesign.com), Nollies and Hoplite on [cbgoc-cloud.top](https://cbgoc-cloud.top). |
-| **Field manuals** | [WTFManuals](https://github.com/Lipford-Dutch/wtfmanuals), the [guide library](https://lipford-dutch.github.io/goc-guide-library/) and the base repo template. |
+| **Field manuals** | [WTFManuals](https://github.com/Lipford-Dutch/wtfmanuals), the [guide library](https://lipford-dutch.github.io/goc-guide-library/) (our public wiki) and the base repo template. |
+| **Private AI** | Self-hosted uncensored AI stack and the [prompts library](https://github.com/willyd61/awesome-chatgpt-prompts); public guide at [goc-private-ai](https://willyd61.github.io/goc-private-ai/). |
+| **Interoperability** | Legacy integration (RIG) in private beta; [public overview](https://rig-project-overview.willyd61.chatgpt.site). |
 | **Contractor tech** | Keith's Contractor Takeoff and Ködade ADE lanes (see [@ContractorKeith](https://github.com/ContractorKeith)). |
+| **Brand** | Official kit: [goc-brand-kit](https://github.com/Lipford-Dutch/goc-brand-kit). |
 
 ```mermaid
 flowchart LR

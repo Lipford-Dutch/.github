@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Q&A discussions
+    url: https://github.com/Lipford-Dutch/.github/discussions/categories/q-a
+    about: Ask a question without opening an issue.
+  - name: GoC guide library
+    url: https://lipford-dutch.github.io/goc-guide-library/
+    about: Step-by-step guides and field notes.

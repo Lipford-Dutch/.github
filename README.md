@@ -20,3 +20,7 @@ GitHub renders the org landing page at <https://github.com/Lipford-Dutch> from
 
 Palette: `#07090a` background, `#f4f5f3` text, `#e65f00` amber, `#3ee6a2` green,
 matching <https://cbgoc-cloud.top>.
+
+## Discussions
+
+Org conversation lives in [Discussions](https://github.com/Lipford-Dutch/.github/discussions): Announcements, Show and tell, Q&A, Ideas, and General (used for the public roadmap until a Roadmap category is added in the repo settings).
